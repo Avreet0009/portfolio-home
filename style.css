@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f8f9fa;
+    padding-top: 80px; /*fixed navbar overlap*/
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    padding: 15px 50px;
+    /* background: linear-gradient(135deg, #ff9a9e, #fad0c4); */
+    background-color: #7a766f;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.logo a{
+    font-size: 26px;
+    color: black;
+    text-decoration: none; /* for removing ____ */
+    transition: color 0.3s ease-in-out;
+}
+.logo{
+    font-weight: bold;
+}
+.logo a:hover {
+    color: #444;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none; /* for removing ____ */
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: rgb(48, 47, 47);
+    text-decoration: none; /* for removing ____ */
+    font-weight: bold;
+}
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}  
+.section-container {
+    display: flex;
+}
+#profile {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding: 100px 10px;
+    height: 80vh;
+    color: rgb(51, 46, 46);
+}
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: auto 0;
+}
+.profile-pic img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #332413;
+}
+.profile-text {
+    max-width: 500px;
+    margin-top: 30px;
+    /* align-self: center;
+    text-align: center;
+    justify-content: center; */
+}
+.profile-text-p1 {
+    text-align: center;
+}
+.profile-text-h1 {
+    font-size: 3rem;
+    /* text-align: center; */
+    /* font-size: 32px; */
+    color: #333;
+}
+.profile-text-p2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: rgb(85, 85, 85);
+}
+/* Profile Buttons */
+.profile-btn {
+    margin-top: 15px;
+}
+.profile-btn-1, .profile-btn-2 {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    /* transition: 0.3s ease-in-out; */
+}
+.profile-btn-1 {
+    background-color: #7a766f;
+    color: white;
+}
+.profile-btn-2 {
+    background-color: #7a766f;
+    color: white;
+}
+.profile-btn-1:hover,
+.profile-btn-2:hover {
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: white 0.1rem solid;
+}
+/* Social Icons */
+.profile-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.profile-socials img {
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+.profile-socials img:hover {
+    transform: scale(1.1);
+}
+/* Project Section  */
+#projects {
+    padding: 50px 20px;
+}
+.projects-h2 {
+    text-align: center;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Contact Section  */
+#contact {
+    text-align: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #cecdb8;
+    margin-bottom: 20px;
+    max-height: fit-content;
+    max-width: 1200px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    max-height: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+form input:focus, form textarea:focus {
+    border-color: black;
+    outline: none;
+}
+button {
+    background-color: #7a766f;
+    color: white;
+    border: 3px solid black;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #333;
+}

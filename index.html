@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <!-- Navbar  -->
+    <nav>
+        <div class="logo"><a href="#profile">PORTFOLIO</a></div>
+        <div class="nav-links" id="nav-links">
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        </div>
+    </nav>
+    <!-- Profile Section  -->
+    <section id="profile">
+        <div class="profile-pic">
+            <img src="./images/profile-pic.jpg" alt="Avreet Singh's Profile-Picture"/>
+        </div>
+        <div class="profile-text">
+            <p class="profile-text-p1">Hello, I'm </p>
+            <h1 class="profile-text-h1">Avreet Singh</h1>
+            <p class="profile-text-p2">Web Developer</p>
+            <div class="profile-btn">
+                <button class="profile-btn-1" onclick="window.open('./images/Avreet_Latest_PLM(1).pdf')">Download CV</button>
+                <button class="profile-btn-2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div class="profile-socials">
+                <a href="https://www.linkedin.com/in/avreet" target="_blank">
+                    <img src="./images/linkedin.png" alt="Linkedin Profile">
+                </a>
+                <a href="https://github.com/Avreet0009" target="_blank">
+                    <img src="./images/github.png" alt="Github Profile">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section  -->
+    <section id="projects">
+        <h2 class="projects-h2">My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/project-1.png" alt="Project 1 Preview">
+                <h3>Project One</h3>
+                <p>A brief description of your project.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project-2.png" alt="Project 2 Preview">
+                <h3>Project Two</h3>
+                <p>A brief description of your project.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact ME</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

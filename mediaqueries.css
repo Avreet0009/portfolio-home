@@ -1,0 +1,86 @@
+/* 🎯 Mobile Responsive (Below 768px) */
+@media screen and (max-width: 768px) {
+    #profile {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+    }
+    .profile-pic img { 
+        width: 150px;
+        height: auto;
+        max-width: 100%;
+        border-radius: 50%;
+    }
+    .profile-text-h1 {
+        font-size: 26px;
+    }
+    .profile-text-p1, .profile-text-p2 {
+        font-size: 16px;
+    }
+    .profile-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .profile-btn-1, .profile-btn-2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .profile-socials img {
+        width: 25px;
+    }
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    nav .logo{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* 📱 Ultra Small Screens (Below 480px) */
+@media screen and (max-width: 480px) {
+    .profile-pic img {
+        width: 120px;
+        height: auto;
+    }
+
+    .profile-text-h1 {
+        font-size: 22px;
+    }
+
+    .profile-text-p1, .profile-text-p2 {
+        font-size: 14px;
+    }
+
+    .profile-btn-1, .profile-btn-2 {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .profile-socials img {
+        width: 22px;
+    }
+    /* 🌟 Make Navbar More Compact */
+    nav ul li a {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
