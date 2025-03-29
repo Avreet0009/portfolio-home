@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Navbar  -->
@@ -21,6 +22,7 @@
             <li><a href="#contact">CONTACT</a></li>
         </ul>
         </div>
+        <button id="theme-toggle">🌙</button>
     </nav>
     <!-- Profile Section  -->
     <section id="profile">
@@ -61,14 +63,23 @@
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact ME</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+    <!-- Contact Me Section -->
+    <section id = "contact">
+        <h2 class="contact-h2">Contact ME</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <span class="error" id="nameError"></span>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <span class="error" id="emailError"></span>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <span class="error" id="messageError"></span>
+            <!-- Hidden Fields -->
+            <!-- <input type="hidden" name="_subject" value="New Contact Form Submission!">
+            <input type="hidden" name="_captcha" value="false">  -->
+            <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
             <button type="submit">Submit</button>
         </form>
+        <p id="successMessage" style="display:none; color: green;">Message sent successfully!</p>
     </section>
 </body>
 </html>

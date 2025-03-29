@@ -28,7 +28,7 @@ nav{
 }
 .logo a{
     font-size: 26px;
-    color: black;
+    color: wheat;
     text-decoration: none; /* for removing ____ */
     transition: color 0.3s ease-in-out;
 }
@@ -36,7 +36,7 @@ nav{
     font-weight: bold;
 }
 .logo a:hover {
-    color: #444;
+    color: black;
 }
 nav ul {
     list-style: none;
@@ -44,6 +44,7 @@ nav ul {
 }
 nav ul li {
     margin-left: 20px;
+    font-weight: bold;
 }
 nav ul li a {
     color: black;
@@ -54,8 +55,8 @@ nav ul li a {
     transition: 0.3s ease-in-out;
 }
 nav ul li a:hover {
-    background: rgba(0, 0, 0, 0.1);
-    color: rgb(48, 47, 47);
+    /* background: rgba(0, 0, 0, 0); */
+    color: wheat;
     text-decoration: none; /* for removing ____ */
     font-weight: bold;
 }
@@ -227,4 +228,60 @@ button {
 }
 button:hover {
     background-color: #333;
+}
+/* Light/Dark Mode  */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: transform 0.2s;
+}
+#theme-toggle:hover {
+    transform: scale(1.2);
+}
+.dark-mode {
+    background-color: #222;
+    color: wheat;
+}
+.dark-mode nav {
+    background-color: #333;
+}
+.dark-mode nav .logo  a {
+    color: wheat;
+}
+.dark-mode nav .logo a:hover {
+    color: white;
+    font-weight: bold;
+}
+.dark-mode nav ul li a {
+    color: white;
+}
+.dark-mode nav ul li a:hover {
+    color: wheat;
+}
+.dark-mode .profile-text-h1, .profile-text-p1 {
+    color: white;
+}
+.dark-mode .project-card {
+    background: #444;
+    color: white;
+}
+.dark-mode .contact-h2 {
+    color: black;
+}
+.dark-mode button {
+    background-color: #555;
+    color: wheat;
+}
+.dark-mode button:hover {
+    background-color: black;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
 }
